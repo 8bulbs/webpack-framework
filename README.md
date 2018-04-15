@@ -1,8 +1,8 @@
 # 8bulbs-project
 
-> A Vue.js project
+> A webpack-Vue.js-koa project
 
-
+# 小广告
 
 >欢迎在github上为我点星星:star:,欢迎转发,也欢迎戳一下[文章:你的webpack,是你的webpack](https://8bulbs.github.io/2018/04/12/%E4%BD%A0%E7%9A%84webpack-%E6%98%AF%E4%BD%A0%E7%9A%84webpack/)末尾的点击打赏
 # 源码使用说明
