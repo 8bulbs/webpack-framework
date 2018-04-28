@@ -10,9 +10,9 @@
 ```bash
 $ git clone https://github.com/8bulbs/webpack-learning.git
 ```
->进入webpack3.0文件夹
+>进入webpack3文件夹
 ```bash
-$ cd webpack3.0
+$ cd webpack3
 ```
 >安装依赖
 ```bash
@@ -36,7 +36,7 @@ $ node server
 >
 # 目录结构
 ```
-webpack3.0  // 项目根目录
+webpack3  // 项目根目录
 │   .babelrc       // babel配置文件
 │   .editorconfig  // 编辑器配置文件
 │   .eslintrc      // eslint规则配置文件

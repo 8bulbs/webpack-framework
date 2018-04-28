@@ -1,5 +1,5 @@
 /**
- * webpack4.0/build/webpack.config.js
+ * webpack4/build/webpack.config.js
  */
 
 const path = require('path')
