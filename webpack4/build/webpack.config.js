@@ -9,7 +9,7 @@ const merge = require('webpack-merge')
 // 提取css代码,生产环境使用外部样式,并可单独缓存
 // 不支持webpack4.0
 // const ExtractTextPlugin = require('extract-text-webpack-plugin')
-// 渲染的html模板x
+// 渲染的html模板
 const HTMLPlugin = require('html-webpack-plugin')
 // 压缩js代码,webpack4.0自带
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
