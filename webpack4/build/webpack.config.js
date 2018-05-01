@@ -36,7 +36,7 @@ const defaultPlugins = [
       minifyCSS: true, // 压缩 HTML 中出现的 CSS 代码
       minifyJS: true // 压缩 HTML 中出现的 JS 代码
     },
-    // 排序方式, 不然会报错
+    // 排序方式, 不然iview会报错
     chunksSortMode: 'none'
   })
 ]
