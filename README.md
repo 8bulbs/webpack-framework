@@ -1,4 +1,7 @@
-### 8bulbs-project
+### 8bulbs-project webpack 开箱即用
+
+### changelog
+1. 2018-05-29 webpack4 增加px转vw适配移动端
 
 > A webpack-Vue.js-koa project
 
