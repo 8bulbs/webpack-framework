@@ -6,7 +6,7 @@ import iView from 'iview'
 import '@/assets/styles/index.styl'
 import store from './store'
 import axios from 'axios'
-import getData from '@/libs/getData'
+import getData from '@/assets/utils/getData'
 
 Vue.use(iView)
 
