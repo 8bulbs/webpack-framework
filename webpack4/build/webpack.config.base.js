@@ -10,6 +10,11 @@
 // $ npm i
 // $ npm i webpack-cli -D
 
+// 支持响应式
+// npm i postcss-aspect-ratio-mini postcss-cssnext autoprefixer
+// postcss-px-to-viewport postcss-write-svg cssnano postcss-viewport-units
+// postcss-viewport-units -D
+
 const path = require('path')
 const createVueLoaderOptions = require('./vue-loader.config')
 // const isDev = process.env.NODE_ENV === 'development'
@@ -19,7 +24,8 @@ const config = {
   // 'production'会做正式环境的优化,比如压缩
   // 优化会自动配置
   // mode 在4.0一定要加,3.xxx不能加
-   mode: process.env.NODE_ENV || 'production',//只接收 'development' || 'production'
+  // 只接收 'development' || 'production'
+  mode: process.env.NODE_ENV || 'production',
   // 编译目标运行的环境
   target: 'web',
   // 入口文件
