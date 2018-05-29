@@ -10,11 +10,6 @@
 // $ npm i
 // $ npm i webpack-cli -D
 
-// 支持响应式
-// npm i postcss-aspect-ratio-mini postcss-cssnext autoprefixer
-// postcss-px-to-viewport postcss-write-svg cssnano postcss-viewport-units
-// postcss-viewport-units -D
-
 const path = require('path')
 const createVueLoaderOptions = require('./vue-loader.config')
 // const isDev = process.env.NODE_ENV === 'development'

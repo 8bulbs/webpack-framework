@@ -9,6 +9,17 @@
 //   }
 // }
 
+// 支持响应式
+// npm i postcss-aspect-ratio-mini postcss-cssnext autoprefixer
+// postcss-px-to-viewport postcss-write-svg cssnano postcss-viewport-units
+// postcss-viewport-units -D
+
+// postcss-aspect-ratio-mini 处理元素容器宽高比
+// <div class="aspectratio">
+//   <div class="aspectratio-content"></div>
+// </div>
+// postcss-write-svg 解决移动端1px
+
 module.exports = {
   "plugins": {
     "postcss-import": {},
@@ -19,11 +30,11 @@ module.exports = {
     "postcss-px-to-viewport": { //核心插件
       viewportWidth: 750, // (Number) The width of the viewport.
       viewportHeight: 1334, // (Number) The height of the viewport.
-      unitPrecision: 3, // 小数位 (Number) The decimal numbers to allow the REM units to grow to.
-      viewportUnit: 'vw', // (String) Expected units.
-      selectorBlackList: ['.ignore', '.hairlines'], // (Array) The selectors to ignore and leave as px.
-      minPixelValue: 1, // (Number) Set the minimum pixel value to replace.
-      mediaQuery: false // (Boolean) Allow px to be converted in media queries.
+      unitPrecision: 3, // px转换成视窗单位值的小数位 (Number) The decimal numbers to allow the REM units to grow to.
+      viewportUnit: 'vw', // 需要转换成的视窗单位(String) Expected units.
+      selectorBlackList: ['.ignore', '.hairlines'], // 忽略的样式类 (Array) The selectors to ignore and leave as px.
+      minPixelValue: 1, // 小于或者等于1px不转换成视窗单位(Number) Set the minimum pixel value to replace.
+      mediaQuery: false // 允许在媒体查询中转换px(Boolean) Allow px to be converted in media queries.
     }, "postcss-viewport-units":{},
     "cssnano": {
       preset: "advanced", // npm i cssnano-preset-advanced -D
