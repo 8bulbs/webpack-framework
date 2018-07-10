@@ -1,5 +1,6 @@
 <template>
   <div id="main" class="app-main">
+    <Button type="primary">Primary</Button>
   </div>
 </template>
 
@@ -14,11 +15,11 @@ export default {
 </script>
 
 
-<style>
-  .app-main{
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-  }
+<style scoped lang="stylus" rel="stylesheet/stylus">
+.app-main{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
 </style>
 

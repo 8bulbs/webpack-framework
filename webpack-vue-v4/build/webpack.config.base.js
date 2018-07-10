@@ -139,6 +139,7 @@ const config = {
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
+        exclude: /node_modules/,
         options: {
           limit: 10000,
           // name: 'resources/[path][name].[hash:8].[ext]'
