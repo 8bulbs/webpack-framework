@@ -7,7 +7,7 @@ axios.interceptors.request.use(
   config => {
     if (!window.navigator.onLine) {
       console.log('网络请求失败，请检查您的网络设置')
-      return Promise.reject({msg: '网络请求失败，请检查您的网络设置'})
+      return Promise.resolve({ msg: '网络请求失败，请检查您的网络设置' })
     }
     return config
   },
