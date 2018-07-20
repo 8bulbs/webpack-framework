@@ -111,8 +111,10 @@ const config = {
     extensions: ['.js', '.vue', '.json', '.jsx'],
     alias: {
       '@': resolve('src'),
+      'libs': resolve('src/libs'),
       'pages': resolve('src/pages'),
       'styles': resolve('src/assets/styles'),
+      'js': resolve('src/assets/js'),
       'images': resolve('src/assets/images')
     }
   }

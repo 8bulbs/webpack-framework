@@ -1,5 +1,4 @@
 import 'babel-polyfill'
-import 'js/wx.js'
 
 import Vue from 'vue'
 import App from './App.vue'

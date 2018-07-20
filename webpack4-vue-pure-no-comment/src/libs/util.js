@@ -1,15 +1,10 @@
-export function getLocal (str) {
-  return JSON.parse(window.localStorage.getItem(str))
-}
-
-export function setLocal (str, data) {
-  window.localStorage.setItem(str, JSON.stringify(data))
-}
-
-export function playCountFmt (num) {
-  if (num > 10000) {
-    return (num / 10000).toFixed(1) + '万'
-  } else {
-    return num + ''
+export function browserType () {
+  const ua = window.navigator.userAgent.toLowerCase()
+  // 是safari浏览器 或者是 微信浏览器
+  // let flag = ua.indexOf('safari') > -1 && ua.indexOf('chrome') === -1 && ua.indexOf('ucbrowser') === -1 || ua.indexOf('micromessenger') > -1
+  let flag = ''
+  if (ua.indexOf('micromessenger') > -1) {
+    flag = 'wechat'
   }
+  return flag
 }
