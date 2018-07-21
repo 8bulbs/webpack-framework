@@ -1,4 +1,4 @@
-const resolve = require('../webpack.config.libs/util')
+const resolve = require('../utils/resolve')
 
 const outputConfig = {
   filename: 'bundle.[hash:8].js',

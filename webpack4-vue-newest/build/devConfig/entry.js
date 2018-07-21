@@ -1,4 +1,4 @@
-const resolve = require('../webpack.config.libs/util')
+const resolve = require('../utils/resolve')
 
 const entryConfig = resolve('src/main.js')
 
